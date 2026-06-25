@@ -1,0 +1,192 @@
+div.pub-list td {
+    text-align: left;
+}
+
+a.pub-list-award:link {
+    color: rgb(184, 64, 110);
+}
+
+a.pub-list-award:visited {
+    color: rgb(184, 64, 110);
+}
+ul.bio-list li{
+    text-align: left;
+}
+
+body, input, select, textarea {
+    font-family: Helvetica, sans-serif !important;
+}
+
+.title h1, .title p  {
+    color: #9e3333 !important;
+}
+
+
+#footer h2, #footer p, #footer dl, #footer dt {
+    color: #636363 !important;
+}
+
+.strike {text-decoration:line-through}
+.text-red {color:red}
+
+body {
+    background-color: #3d5a72 !important;
+    /* background-image: url("assets/css/images/overlay.png"), -moz-linear-gradient(45deg, #f3f3f3 15%, #f3f3f3 85%) !important;
+    background-image: url("assets/css/images/overlay.png"), -webkit-linear-gradient(45deg, #f3f3f3 15%, #f3f3f3 85%) !important;
+    background-image: url("assets/css/images/overlay.png"), -ms-linear-gradient(45deg, #f3f3f3 15%, #f3f3f3 85%) !important;
+    background-image: url("assets/css/images/overlay.png"), linear-gradient(45deg, #f3f3f3 15%, #f3f3f3 85%) !important; */
+    background-image: -moz-linear-gradient(45deg, #f3f3f3 15%, #f3f3f3 85%) !important;
+    background-image: -webkit-linear-gradient(45deg, #f3f3f3 15%, #f3f3f3 85%) !important;
+    background-image: -ms-linear-gradient(45deg, #f3f3f3 15%, #f3f3f3 85%) !important;
+    background-image: linear-gradient(45deg, #f3f3f3 15%, #f3f3f3 85%) !important;
+}
+
+#main header.major h2:after {
+    background-color: #0b032c;
+    background-image: -moz-linear-gradient(90deg, #797979, #797979, #797979) !important;
+    background-image: -webkit-linear-gradient(90deg, #797979, #797979, #797979) !important;
+    background-image: -ms-linear-gradient(90deg, #797979, #797979, #797979) !important;
+    background-image: linear-gradient(90deg, #797979, #797979, #797979) !important;
+}
+
+#main h2, #main h3, #main h4, #main h5, #main h6 {
+    color: #9e3333 !important;
+}
+
+#main strong, #main b {
+    color: #636363;
+    font-weight: bold;
+}
+
+#header.alt > * {
+    -moz-transition: opacity 0.1s ease;
+    -webkit-transition: opacity 0.1s ease;
+    -ms-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease;
+    -moz-transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    -ms-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    opacity: 1;
+}
+
+.sponsor-logo {
+    float: left;
+}
+
+.sponsor-logo img {
+    height: 4rem;
+    width: auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.sponsor-text {
+    float: left;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-left: 1em;
+    text-align: left;
+}
+
+
+ .sponsors { 
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center; 
+    width: calc(100% + 2em);
+    margin: 0 0 1em 1em;
+    padding: 0;
+    list-style: none;
+} 
+
+
+.sponsor-2col {
+    width: calc(50% - 2em);
+}
+
+.sponsor-1col {
+    width: calc(100% - 2em);
+}
+
+    .sponsors li {
+        margin-top: 0em;
+        margin-bottom: 0.5em;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        /*<--!vertical-align: middle;
+        justify-content: center;*/
+    }
+
+    @media screen and (max-width: 736px) {
+
+        .sponsors {
+            width: 200%;
+            margin: 0 0 2em 0;
+        }
+
+    }
+
+/* Mobile Navigation */
+@media screen and (max-width: 736px) {
+    #nav {
+        display: block !important;
+        position: relative !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0.5em 0.5em !important;
+        border-radius: 0.25em 0.25em 0 0;
+    }
+
+    #nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.2em;
+    }
+
+    #nav ul li {
+        margin: 0 !important;
+    }
+
+    #nav ul li a {
+        font-size: 0.8em !important;
+        padding: 0 0.6em !important;
+        height: 2em !important;
+        line-height: 2em !important;
+        white-space: nowrap;
+    }
+
+    #nav + #main {
+        padding-top: 0 !important;
+    }
+
+    #nav.alt {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: 100% !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+        z-index: 10000;
+    }
+
+    #nav.alt ul li a {
+        font-size: 0.75em !important;
+    }
+}
